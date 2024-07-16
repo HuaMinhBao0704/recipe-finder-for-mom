@@ -2,7 +2,7 @@ import RecipeCard from "../components/RecipeCard";
 import { getRandomColor } from "../lib/utils";
 
 const FavoritesPage = () => {
-  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const favorites = JSON.parse(localStorage.getItem('mommy__favorites')) || [];
 
   return (
     <div className='min-h-screen flex-1 bg-[#faf9fb] p-10'>
