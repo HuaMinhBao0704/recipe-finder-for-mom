@@ -13,7 +13,7 @@ const RecipeCard = ({ recipe, bg, badge }) => {
   );
 
   const addRecipeToFavorites = () => {
-    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    let favorites = JSON.parse(localStorage.getItem('mommy__favorites')) || [];
     const isRecipeAlreadyInFavorites = favorites.some(
       (fav) => fav.label === recipe.label
     );
@@ -26,7 +26,7 @@ const RecipeCard = ({ recipe, bg, badge }) => {
       setIsFavorite(true);
     }
 
-    localStorage.setItem('favorites', JSON.stringify(favorites));
+    localStorage.setItem('mommy__favorites', JSON.stringify(favorites));
   };
 
   return (
